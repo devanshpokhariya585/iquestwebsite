@@ -4,13 +4,7 @@ import { Sparkles } from '@react-three/drei'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import Chip from './Chip'
 
-/*
-  3D stage for the neon processor.
-  PERF: the canvas only runs its render loop while it is on-screen
-  (IntersectionObserver -> frameloop). Off-screen canvases stop rendering
-  entirely, which is the big win when two chips exist on one page.
-  dpr is capped so high-DPI screens don't render 4x the pixels through bloom.
-*/
+
 export default function ChipCanvas({
   interactive = false,
   open = false,

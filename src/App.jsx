@@ -7,11 +7,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 
-// non-home pages load on demand (smaller first paint)
 const PastEvents = lazy(() => import('./pages/PastEvents'))
 const Calendar = lazy(() => import('./pages/Calendar'))
 
-// Handles both top-of-page reset and scrolling to a #hash section (e.g. /#team)
 function ScrollManager() {
   const { pathname, hash } = useLocation()
   useEffect(() => {
@@ -29,7 +27,6 @@ function ScrollManager() {
       else window.scrollTo(0, 0)
       return true
     }
-    // try immediately, then again once the section has laid out
     if (!go()) setTimeout(go, 150)
     else if (hash) setTimeout(go, 150)
   }, [pathname, hash])

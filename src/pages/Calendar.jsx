@@ -20,7 +20,7 @@ export default function Calendar() {
   const eventMap = useEventMap()
   const first = upcomingEvents[0]?.date || '2026-08-01'
   const [y, setY] = useState(Number(first.slice(0, 4)))
-  const [m, setM] = useState(Number(first.slice(5, 7)) - 1) // 0-indexed
+  const [m, setM] = useState(Number(first.slice(5, 7)) - 1)
   const [selected, setSelected] = useState(null)
 
   // Monday-first grid math

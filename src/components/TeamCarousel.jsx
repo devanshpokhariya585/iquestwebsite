@@ -15,7 +15,7 @@ function fill(i) {
   )
 }
 
-// photo with jpg -> png -> initials fallback
+
 function Photo({ m, i, className }) {
   const candidates = [`/team/${slug(m.name)}.jpg`, `/team/${slug(m.name)}.png`]
   const [idx, setIdx] = useState(0)

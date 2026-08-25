@@ -1,7 +1,7 @@
 import { marquee } from '../data/content'
 
 export default function Marquee() {
-  // duplicated once so the -50% loop is seamless
+  
   const items = [...marquee, ...marquee]
   return (
     <div className="relative z-10 overflow-hidden border-y border-line/80 bg-pink/[0.03] py-4">

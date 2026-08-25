@@ -6,7 +6,7 @@ const ease = [0.16, 1, 0.3, 1]
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
-  const [status, setStatus] = useState('idle') // idle | success | error
+  const [status, setStatus] = useState('idle')
 
   const handleSubmit = (e) => {
     e.preventDefault()

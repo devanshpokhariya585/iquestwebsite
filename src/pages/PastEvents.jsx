@@ -6,13 +6,16 @@ import Floaty from '../components/Floaty'
 
 const ease = [0.16, 1, 0.3, 1]
 
-/*
-  Cover + gallery images use picsum.photos (seeded, so each event is consistent).
-  Swap for your own by dropping files in /public/events/ and returning those paths
-  from coverOf / galleryOf below.
-*/
-const coverOf = (ev) => `https://picsum.photos/seed/${ev.id}-cover/900/540`
+
+const coverOf = (ev) => `/events/${ev.id}-cover.jpg`
 const galleryOf = (ev) =>
+  /*`/events/${ev.id}-${n}.jpg`)
+    p1-cover.jpg
+    p1-0.jpg
+    p1-1.jpg
+... etc
+
+*/
   Array.from({ length: 6 }, (_, n) => `https://picsum.photos/seed/${ev.id}-${n}/800/560`)
 
 export default function PastEvents() {

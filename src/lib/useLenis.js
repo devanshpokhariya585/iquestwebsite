@@ -1,11 +1,7 @@
 import { useEffect, useRef } from 'react'
 import Lenis from 'lenis'
 
-/*
-  Momentum smooth-scroll (the biggest "Active Theory" feel differentiator).
-  Also hijacks in-page anchor clicks so nav links glide instead of jumping.
-  Disabled automatically when the user prefers reduced motion.
-*/
+
 export default function useLenis() {
   const lenisRef = useRef(null)
 

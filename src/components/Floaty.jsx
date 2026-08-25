@@ -4,13 +4,7 @@ import { pointerNX, pointerNY, installPointer } from '../lib/pointer'
 
 const ease = [0.16, 1, 0.3, 1]
 
-/*
-  Active-Theory-style floating item.
-  - reveals once on scroll (outer)
-  - drifts toward the cursor with easing (parallax) using ONE shared pointer
-  - idly bobs up and down (inner)
-  Disabled gracefully when the user prefers reduced motion.
-*/
+
 export default function Floaty({ index = 0, depth = 16, className = '', children }) {
   const reduce = useReducedMotion()
   useEffect(() => {

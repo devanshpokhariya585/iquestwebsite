@@ -8,7 +8,6 @@ const PINK = '#ff2d95'
 const NEON = '#ff7ad4'
 const WHITE = '#ffffff'
 
-// small emissive bar used for circuit traces / fins
 function Trace({ position, args, color = NEON, intensity = 1.4 }) {
   return (
     <mesh position={position}>
@@ -18,7 +17,6 @@ function Trace({ position, args, color = NEON, intensity = 1.4 }) {
   )
 }
 
-// one lid (top face detailed). sign = -1 (left) or +1 (right)
 function LidContent({ sign }) {
   const fins = [-0.9, -0.45, 0, 0.45, 0.9]
   return (
@@ -155,12 +153,11 @@ export default function Chip({ open = false, interactive = false, onToggle, scal
       if (motesMat.current) motesMat.current.opacity = tt * 0.9
     }
 
-    // FACE-FORWARD MOTION: no full spin. Slow sway + mouse parallax, top face toward camera.
     if (outer.current) {
       outer.current.position.y = lift + Math.sin(time * 1.0) * 0.07
       const swayY = Math.sin(time * 0.45) * 0.28
       const targetY = swayY + state.pointer.x * 0.3
-      const targetX = 0.4 + state.pointer.y * 0.14 // positive => top face tilts toward the camera
+      const targetX = 0.4 + state.pointer.y * 0.14 
       outer.current.rotation.y = lerp(outer.current.rotation.y, targetY, 0.05)
       outer.current.rotation.x = lerp(outer.current.rotation.x, targetX, 0.05)
     }
@@ -243,7 +240,7 @@ export default function Chip({ open = false, interactive = false, onToggle, scal
       </group>
       <pointLight ref={coreLight} position={[0, 0.5, 0]} color={NEON} intensity={1.6} distance={9} />
 
-      {/* logo panel — small, static, propped on the pink core (3D, sways with the chip) */}
+      {/* logo panel - small, static, propped on the pink core (3D, sways with the chip) */}
       <mesh ref={logoMesh} position={[0, 0.62, 0.28]} rotation={[-0.18, 0, 0]}>
         <planeGeometry args={[1.05, 1.05]} />
         <meshBasicMaterial

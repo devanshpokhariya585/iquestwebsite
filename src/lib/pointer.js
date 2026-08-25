@@ -1,7 +1,6 @@
 import { motionValue } from 'framer-motion'
 
-// One global pointer, shared by every Floaty (instead of one listener each).
-export const pointerNX = motionValue(0) // normalized -1..1
+export const pointerNX = motionValue(0) 
 export const pointerNY = motionValue(0)
 
 let installed = false

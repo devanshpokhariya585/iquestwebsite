@@ -7,18 +7,18 @@ const ease = [0.16, 1, 0.3, 1]
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
-      {/* chip lifted up so the title doesn't cover it */}
+      
       <div className="pointer-events-none absolute inset-0 z-0">
         <ChipCanvas interactive={false} open={false} dust scale={0.72} lift={0.85} />
       </div>
 
-      {/* vignette sits lower, around the title, for legibility */}
+     
       <div
         className="pointer-events-none absolute inset-0 z-[1]"
         style={{ background: 'radial-gradient(52% 34% at 50% 62%, rgba(10,5,16,0.78), transparent 72%)' }}
       />
 
-      {/* content pushed slightly down so the lifted chip has room above */}
+      
       <div className="relative z-10 mt-[14vh] flex flex-col items-center text-center">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -58,7 +58,7 @@ export default function Hero() {
           {hero.tagline}
         </motion.p>
 
-        {/* single CTA, no other clutter */}
+        
         <motion.a
           href="#about"
           initial={{ opacity: 0 }}
@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.a>
       </div>
 
-      {/* scroll hint */}
+      
       <motion.a
         href="#about"
         initial={{ opacity: 0 }}
