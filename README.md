@@ -1,3 +1,0 @@
-# DEVANSH POKHARIYA
-
-
