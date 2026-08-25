@@ -1,6 +1,6 @@
 # Innovators Quest - DEVANSH POKHARIYA
 
-An immersive, WebGL-driven landing page for the Innovators Quest tech club, styled
+An WebGL-driven landing page for the Innovators Quest club, styled
 as an **electric-pink + white "neo-city"** neon experience. The signature element
 is a real **3D microchip**: it floats, reacts to your cursor, and splits open on
 click to reveal a glowing core with rising energy motes.
