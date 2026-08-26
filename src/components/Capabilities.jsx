@@ -1,10 +1,9 @@
-import { motion } from 'framer-motion'
-import { Code2, Trophy, Rocket, Users, GitBranch } from 'lucide-react'
+import { motion,} from 'framer-motion'
+import { Code2, Settings, Palette, Cpu, Newspaper } from 'lucide-react'
 import { capabilities } from '../data/content'
 import Floaty from './Floaty'
-
 const ease = [0.16, 1, 0.3, 1]
-const icons = { Code2, Trophy, Rocket, Users, GitBranch }
+const icons = { Code2, Settings, Palette, Cpu, Newspaper }
 
 export default function Capabilities() {
   return (

@@ -40,10 +40,9 @@ export const events = {
   heading: 'WHAT’S NEXT',
   subheading: 'Upcoming missions on the calendar.',
   list: [
-    { id: 'q', tag: 'HACKATHON', title: 'Quantum Hack 48', date: 'SEP 12', time: '48-hour sprint', location: 'Main Lab · Block C', status: 'REGISTERING' },
-    { id: 'ai', tag: 'WORKSHOP', title: 'Neural Nets from Scratch', date: 'SEP 20', time: '5:00 – 8:00 PM', location: 'Room 204 · Online', status: 'REGISTERING' },
-    { id: 'oss', tag: 'OPEN SOURCE', title: 'First-PR Friday', date: 'SEP 27', time: '3:00 – 6:00 PM', location: 'Innovation Hub', status: 'FEW SEATS' },
-    { id: 'demo', tag: 'SHOWCASE', title: 'Demo Night · Vol. 07', date: 'OCT 04', time: '6:30 PM onward', location: 'Auditorium A', status: 'RSVP OPEN' },
+    { id: 'q', tag: 'WORKSHOP', title: 'WANNA CRACK GSOC', date: 'SEP 18', time: '10:00 AM - 4:00 PM', location: 'PRP AUDITORIUM-2', status: 'REGISTERING',link: 'https://gravitas.vit.ac.in/events/ff0d04aa-c637-4a0f-ac52-6c56490509c3' },
+    { id: 'ai', tag: 'SHOWCASE', title: 'TRAIL OF SECRETS', date: 'SEP 19', time: '10:00 AM – 4:00 PM', location: 'SJT-307', status: 'REGISTERING', link: "https://gravitas.vit.ac.in/events/e9a6ffc2-c301-4c9e-aece-72078993be23"},
+
   ],
 }
 
@@ -81,11 +80,11 @@ export const capabilities = {
   heading: 'THE STACK',
   subheading: 'Five circuits, one mission — turning ideas into shipped reality.',
   items: [
-    { icon: 'Code2', title: 'Projects', text: 'Real ideas, real impact. We build things people use.' },
-    { icon: 'Trophy', title: 'Events', text: 'Tech events that inspire, challenge and connect.' },
-    { icon: 'Rocket', title: 'Workshops', text: 'Hands-on learning, well beyond the classroom.' },
-    { icon: 'Users', title: 'Community', text: 'United by passion, driven by purpose.' },
-    { icon: 'GitBranch', title: 'Open Source', text: 'Build. Contribute. Give back to the commons.' },
+    { icon: 'Code2', title: 'Techincal', text: 'Build innovative solutions through code, technology, and problem-solving.' },
+    { icon: 'Settings', title: 'Management', text: 'Plan, organize, and execute events that bring ideas to life.' },
+    { icon: 'Palette', title: 'Design', text: 'Turn ideas into engaging visuals, experiences, and creative identities.' },
+    { icon: 'Cpu', title: 'Electrical and Electronics', text: 'Explore circuits, hardware, embedded systems, and emerging technology.' },
+    { icon: 'Newspaper', title: 'Editorial', text: 'Create compelling content that informs, inspires, and connects our community.' },
   ],
 }
 
@@ -128,24 +127,15 @@ export const RECRUITMENT_URL = 'https://your-recruitment-site.com'
 
 // Upcoming events (dated, for the calendar page)
 export const upcomingEvents = [
-  { id: 'u1', date: '2026-08-12', title: 'Quantum Hack 48', tag: 'HACKATHON', time: '48-hour sprint', location: 'Main Lab · Block C' },
-  { id: 'u2', date: '2026-08-20', title: 'Neural Nets from Scratch', tag: 'WORKSHOP', time: '5:00 – 8:00 PM', location: 'Room 204 · Online' },
-  { id: 'u3', date: '2026-08-27', title: 'First-PR Friday', tag: 'OPEN SOURCE', time: '3:00 – 6:00 PM', location: 'Innovation Hub' },
-  { id: 'u4', date: '2026-09-04', title: 'Demo Night · Vol. 07', tag: 'SHOWCASE', time: '6:30 PM', location: 'Auditorium A' },
-  { id: 'u5', date: '2026-09-15', title: 'Cloud Native Bootcamp', tag: 'WORKSHOP', time: '10:00 AM – 4:00 PM', location: 'Lab 3' },
-  { id: 'u6', date: '2026-09-23', title: 'AI Agents Meetup', tag: 'MEETUP', time: '5:30 PM', location: 'Seminar Hall' },
-  { id: 'u7', date: '2026-10-05', title: 'Hacktoberfest Kickoff', tag: 'OPEN SOURCE', time: 'All day', location: 'Innovation Hub' },
-  { id: 'u8', date: '2026-10-18', title: 'Design Systems Jam', tag: 'WORKSHOP', time: '2:00 – 6:00 PM', location: 'Studio B' },
+  { id: 'u1', date: '2026-09-18', title: 'WANNA CRACK GSOC 3.0', tag: 'WORKSHOP', time: '10:00 AM to 4:00 PM', location: 'PRP Auditorium-2' },
+  { id: 'u2', date: '2026-09-19', title: 'TRAIL OF SECRETS', tag: 'SHOWCASE', time: '10:00AM – 4:00 PM', location: 'SJT 307' },
 ]
 
 //  Past events (recaps)
 export const pastEvents = [
-  { id: 'p1', date: '2026-05-10', year: '2026', title: 'WANNA CRACK GSOC', tag: 'WORKSHOP', attendees: 140, blurb: '' },
-  { id: 'p2', date: '2026-03-22', year: '2026', title: 'Intro to Rust', tag: 'WORKSHOP', attendees: 95, blurb: '' },
-  { id: 'p3', date: '2026-02-14', year: '2026', title: 'Open Source Day', tag: 'OPEN SOURCE', attendees: 140, blurb: '' },
-  { id: 'p4', date: '2025-11-30', year: '2025', title: 'Demo Night · Vol. 06', tag: 'SHOWCASE', attendees: 300, blurb: '' },
-  { id: 'p5', date: '2025-10-12', year: '2025', title: 'ML Winter Camp', tag: 'BOOTCAMP', attendees: 110, blurb: '' },
-  { id: 'p6', date: '2025-09-05', year: '2025', title: 'Founders Fireside', tag: 'TALK', attendees: 180, blurb: '' },
+  { id: 'p1', date: '2026-02-7', year: '2026', title: 'CYBERSHIELD X', tag: 'WORKSHOP', attendees: 50, blurb: '' },
+  { id: 'p2', date: '2026-03-5', year: '2026', title: 'SUSTAIN-A-THON', tag: 'IDEATHON', attendees: 45, blurb: '' },
+  
 ]
 
 

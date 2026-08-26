@@ -9,6 +9,7 @@ const ease = [0.16, 1, 0.3, 1]
 
 const coverOf = (ev) => `/events/${ev.id}-cover.jpg`
 const galleryOf = (ev) =>
+  Array.from({ length: 6 }, (_, n) => `/events/${ev.id}-${n}.jpg`)
   /*`/events/${ev.id}-${n}.jpg`)
     p1-cover.jpg
     p1-0.jpg
@@ -16,7 +17,6 @@ const galleryOf = (ev) =>
 ... etc
 
 */
-  Array.from({ length: 6 }, (_, n) => `https://picsum.photos/seed/${ev.id}-${n}/800/560`)
 
 export default function PastEvents() {
   const years = useMemo(() => ['All', ...Array.from(new Set(pastEvents.map((e) => e.year)))], [])

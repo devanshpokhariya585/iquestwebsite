@@ -35,7 +35,9 @@ export default function Events() {
         {events.list.map((ev, i) => (
           <Floaty key={ev.id} index={i} depth={10 + (i % 3) * 8}>
             <a
-              href="#"
+              href={ev.link || '#'}
+              target={ev.link ? '_blank' : undefined}
+              rel={ev.link ? 'noopener noreferrer' : undefined}
               className="glass glass-sheen group flex items-center gap-5 rounded-2xl p-5 md:p-6"
             >
               {/* date block */}
