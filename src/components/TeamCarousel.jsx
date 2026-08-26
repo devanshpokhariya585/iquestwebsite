@@ -69,7 +69,7 @@ function MemberCard({ m, i, onOpen }) {
 
         {/* BACK — click me */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-pink/60 p-4 text-center shadow-[0_0_45px_rgba(255,45,149,0.35)] [backface-visibility:hidden] [transform:rotateY(180deg)]"
+          className="absolute inset-0 flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-pink/60 p-4 text-center shadow-[0_0_45px_rgba(220,38,38,0.35)] [backface-visibility:hidden] [transform:rotateY(180deg)]"
           style={{ background: fill(i) }}
         >
           <div className="scanlines absolute inset-0 opacity-40" />
@@ -104,7 +104,7 @@ function MemberModal({ m, onClose }) {
         exit={{ opacity: 0, scale: 0.93, y: 8 }}
         transition={{ duration: 0.32, ease }}
         onClick={(e) => e.stopPropagation()}
-        className="relative aspect-[3/4] max-h-[88vh] w-[86vw] max-w-[440px] overflow-hidden rounded-3xl border-2 border-pink/70 shadow-[0_0_90px_rgba(255,45,149,0.45)] md:w-[40vw]"
+        className="relative aspect-[3/4] max-h-[88vh] w-[86vw] max-w-[440px] overflow-hidden rounded-3xl border-2 border-pink/70 shadow-[0_0_90px_rgba(220,38,38,0.45)] md:w-[40vw]"
       >
         <Photo m={m} i={i} className="absolute inset-0 h-full w-full object-cover" />
         <div className="scanlines absolute inset-0 opacity-40" />

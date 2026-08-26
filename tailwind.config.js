@@ -7,9 +7,9 @@ export default {
         void: '#0a0510',      // neo-city night
         ink: '#f7edf5',       // near-white text
         muted: '#9683a3',     // mauve grey
-        pink: '#ff2d95',      // electric pink (primary neon)
-        neon: '#ff7ad4',      // hot light pink
-        magenta: '#d81ce0',   // deep magenta accent
+        pink: '#dc2626',      // deep red (primary neon)
+        neon: '#ef4444',      // bright red
+        magenta: '#b91c1c',   // darker red accent
         line: '#2a1830',      // hairline
       },
       fontFamily: {

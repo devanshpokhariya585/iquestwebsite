@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { Code2, Trophy, Rocket, Users, GitBranch } from 'lucide-react'
+import { Cpu, Zap, Users, Palette, BookOpen, Video } from 'lucide-react'
 import { capabilities } from '../data/content'
 import Floaty from './Floaty'
 
 const ease = [0.16, 1, 0.3, 1]
-const icons = { Code2, Trophy, Rocket, Users, GitBranch }
+const icons = { Cpu, Zap, Users, Palette, BookOpen, Video }
 
 export default function Capabilities() {
   return (
@@ -25,7 +25,7 @@ export default function Capabilities() {
         </p>
       </motion.div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {capabilities.items.map((item, i) => {
           const Icon = icons[item.icon] || Code2
           return (

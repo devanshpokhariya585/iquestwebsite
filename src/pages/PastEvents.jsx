@@ -198,7 +198,7 @@ export default function PastEvents() {
               transition={{ duration: 0.3 }}
               src={lightbox}
               alt="Preview"
-              className="max-h-[86vh] max-w-[92vw] rounded-2xl border border-white/15 object-contain shadow-[0_0_80px_rgba(255,45,149,0.25)]"
+              className="max-h-[86vh] max-w-[92vw] rounded-2xl border border-white/15 object-contain shadow-[0_0_80px_rgba(220,38,38,0.25)]"
             />
             <button
               onClick={() => setLightbox(null)}

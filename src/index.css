@@ -15,9 +15,9 @@
     @apply bg-void text-ink font-body antialiased;
     overflow-x: hidden;
     background-image:
-      radial-gradient(1000px 600px at 50% -12%, rgba(255, 45, 149, 0.16), transparent 60%),
-      radial-gradient(760px 620px at 88% 22%, rgba(216, 28, 224, 0.10), transparent 55%),
-      radial-gradient(1200px 500px at 50% 118%, rgba(255, 45, 149, 0.14), transparent 62%);
+      radial-gradient(1000px 600px at 50% -12%, rgba(220, 38, 38, 0.16), transparent 60%),
+      radial-gradient(760px 620px at 88% 22%, rgba(185, 28, 28, 0.10), transparent 55%),
+      radial-gradient(1200px 500px at 50% 118%, rgba(220, 38, 38, 0.14), transparent 62%);
     background-attachment: fixed;
   }
 
@@ -28,14 +28,14 @@
     z-index: 0;
     pointer-events: none;
     background-image:
-      linear-gradient(rgba(255, 45, 149, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 45, 149, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(220, 38, 38, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(220, 38, 38, 0.05) 1px, transparent 1px);
     background-size: 56px 56px;
     mask-image: radial-gradient(circle at 50% 35%, black, transparent 80%);
   }
 
   ::selection {
-    background: rgba(255, 45, 149, 0.32);
+    background: rgba(220, 38, 38, 0.32);
     color: #fff;
   }
 
@@ -55,7 +55,7 @@
            transition-all duration-300 hover:bg-pink/20;
   }
   .btn-primary:hover {
-    box-shadow: 0 0 26px rgba(255, 45, 149, 0.4);
+    box-shadow: 0 0 26px rgba(220, 38, 38, 0.4);
   }
 
   .btn-ghost {
@@ -69,7 +69,7 @@
   }
   .neo-panel:hover {
     @apply border-pink/60 -translate-y-1;
-    box-shadow: 0 0 0 1px rgba(255, 45, 149, 0.25), 0 16px 50px rgba(255, 45, 149, 0.18);
+    box-shadow: 0 0 0 1px rgba(220, 38, 38, 0.25), 0 16px 50px rgba(220, 38, 38, 0.18);
   }
 
   /* frosted glass card */
@@ -87,11 +87,11 @@
   }
   .glass:hover {
     transform: translateY(-4px);
-    border-color: rgba(255, 45, 149, 0.55);
+    border-color: rgba(220, 38, 38, 0.55);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.22),
-      0 0 0 1px rgba(255, 45, 149, 0.25),
-      0 24px 70px rgba(255, 45, 149, 0.18);
+      0 0 0 1px rgba(220, 38, 38, 0.25),
+      0 24px 70px rgba(220, 38, 38, 0.18);
   }
   /* glossy top sheen for glass surfaces */
   .glass-sheen::before {
@@ -110,8 +110,8 @@
     pointer-events: none;
     background: repeating-linear-gradient(
       to bottom,
-      rgba(255, 122, 212, 0.06) 0px,
-      rgba(255, 122, 212, 0.06) 1px,
+      rgba(239, 68, 68, 0.06) 0px,
+      rgba(239, 68, 68, 0.06) 1px,
       transparent 2px,
       transparent 4px
     );
@@ -121,10 +121,10 @@
 
 @layer utilities {
   .text-glow-pink {
-    text-shadow: 0 0 24px rgba(255, 45, 149, 0.6);
+    text-shadow: 0 0 24px rgba(220, 38, 38, 0.6);
   }
   .text-glow-white {
-    text-shadow: 0 0 22px rgba(255, 255, 255, 0.4), 0 0 44px rgba(255, 45, 149, 0.35);
+    text-shadow: 0 0 22px rgba(255, 255, 255, 0.4), 0 0 44px rgba(220, 38, 38, 0.35);
   }
   .display-xl {
     font-size: clamp(3rem, 13vw, 12rem);
