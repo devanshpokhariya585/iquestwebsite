@@ -41,7 +41,13 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <Link to="/" className="flex items-center gap-2 font-display text-sm font-bold tracking-[0.2em] text-white">
-          IQ<span className="text-pink">/</span>
+           <a href="#top" className="inline-block">
+            <img
+              src="/logo.png"
+              alt="Innovators Quest"
+              className="h-16 w-auto drop-shadow-[0_0_22px_rgba(255,35,56,0.35)]"
+            />
+          </a>
           <span className="hidden text-muted sm:inline">INNOVATORS QUEST</span>
         </Link>
 

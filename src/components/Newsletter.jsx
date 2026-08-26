@@ -30,7 +30,7 @@ export default function Newsletter() {
           Join the <span className="text-white text-glow-white">signal.</span>
         </h2>
         <p className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-muted">
-          Event drops, hackathon calls and open-source missions — straight to your inbox.
+          Event drops, hackathon calls and open-source missions - straight to your inbox.
           No spam, unsubscribe anytime.
         </p>
 
@@ -46,7 +46,7 @@ export default function Newsletter() {
               setEmail(e.target.value)
               if (status !== 'idle') setStatus('idle')
             }}
-            placeholder="you@domain.dev"
+            placeholder="your vit email | xyz@vitstudent.ac.in"
             aria-label="Email address"
             className="w-full bg-transparent py-2 font-mono text-sm text-ink placeholder:text-muted/50 focus:outline-none"
            
