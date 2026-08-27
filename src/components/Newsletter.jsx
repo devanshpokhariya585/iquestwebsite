@@ -10,7 +10,7 @@ export default function Newsletter() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    const ok = /^[^\s@]+@vit(student)?\.ac\.in$/.test(email.toLowerCase())
     if (!ok) return setStatus('error')
     // TODO: POST { email } to your Express endpoint, e.g. /api/subscribe
     setStatus('success')

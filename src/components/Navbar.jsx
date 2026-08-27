@@ -41,13 +41,13 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <Link to="/" className="flex items-center gap-2 font-display text-sm font-bold tracking-[0.2em] text-white">
-           <a href="#top" className="inline-block">
+          <div className="inline-block">
             <img
               src="/logo.png"
               alt="Innovators Quest"
               className="h-16 w-auto drop-shadow-[0_0_22px_rgba(255,35,56,0.35)]"
             />
-          </a>
+          </div>
           <span className="hidden text-muted sm:inline">INNOVATORS QUEST</span>
         </Link>
 
@@ -61,7 +61,11 @@ export default function Navbar() {
           ))}
           {/* Team is an inline section on the home page */}
           <li>
-            <Link to="/#team" className={plainCls}>Team</Link>
+            {pathname === '/' ? (
+              <a href="#team" className={plainCls}>Team</a>
+            ) : (
+              <Link to="/#team" className={plainCls}>Team</Link>
+            )}
           </li>
           <li>
             <a
@@ -94,12 +98,22 @@ export default function Navbar() {
           >
             {[...routeLinks, { label: 'Team', to: '/#team' }].map((l) => (
               <li key={l.to} className="border-b border-white/5">
-                <Link
-                  to={l.to}
-                  className="block py-4 font-mono text-sm uppercase tracking-[0.25em] text-ink"
-                >
-                  {l.label}
-                </Link>
+                {pathname === '/' && l.to === '/#team' ? (
+                  <a
+                    href="#team"
+                    className="block py-4 font-mono text-sm uppercase tracking-[0.25em] text-ink"
+                    onClick={() => setOpen(false)}
+                  >
+                    {l.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={l.to}
+                    className="block py-4 font-mono text-sm uppercase tracking-[0.25em] text-ink"
+                  >
+                    {l.label}
+                  </Link>
+                )}
               </li>
             ))}
             <li>
