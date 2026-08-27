@@ -126,6 +126,7 @@ export default function PastEvents() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setOpen(null)}
+            data-lenis-prevent="true"
             className="fixed inset-0 z-[80] flex items-start justify-center overflow-y-auto bg-void/95 p-4 backdrop-blur-xl md:p-10"
           >
             <motion.div
@@ -142,9 +143,10 @@ export default function PastEvents() {
                 <img src={coverOf(open)} alt={open.title} className="h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-void via-void/40 to-transparent" />
                 <button
-                  onClick={() => setOpen(null)}
+                  type="button"
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); setOpen(null); }}
                   aria-label="Close"
-                  className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-void/50 text-white backdrop-blur-sm transition-colors hover:border-pink hover:text-neon"
+                  className="absolute right-4 top-4 z-[100] grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-white/20 bg-void/50 text-white backdrop-blur-sm transition-colors hover:border-pink hover:text-neon"
                 >
                   <X size={18} />
                 </button>
@@ -206,7 +208,7 @@ export default function PastEvents() {
             <button
               onClick={() => setLightbox(null)}
               aria-label="Close"
-              className="absolute right-6 top-6 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-void/50 text-white hover:border-pink hover:text-neon"
+              className="absolute right-6 top-6 z-10 grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-void/50 text-white hover:border-pink hover:text-neon"
             >
               <X size={20} />
             </button>

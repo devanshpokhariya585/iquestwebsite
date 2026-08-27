@@ -62,7 +62,12 @@ export const footer = {
       { label: 'Contact', href: '#' },
     ] },
   ],
-  socials: ['GitHub', 'Discord', 'Instagram', 'LinkedIn'],
+  socials: [
+    { name: 'GitHub', url: '#' },
+    { name: 'Discord', url: '#' },
+    { name: 'Instagram', url: 'https://www.instagram.com/iquest.vit/' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/company/innovatorsquest/' }
+  ],
 }
 
 export const marquee = [
