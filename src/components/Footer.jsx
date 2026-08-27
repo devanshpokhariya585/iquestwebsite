@@ -16,12 +16,13 @@ export default function Footer() {
           <div className="mt-6 flex flex-wrap gap-2">
             {footer.socials.map((s) => (
               <a
-                key={s}
-                href="#"
-               
+                key={s.name}
+                href={s.url}
+                target={s.url !== '#' ? '_blank' : undefined}
+                rel={s.url !== '#' ? 'noopener noreferrer' : undefined}
                 className="rounded-full border border-white/15 px-4 py-1.5 font-mono text-[10px] uppercase tracking-widest text-muted transition-colors hover:border-neon/60 hover:text-neon"
               >
-                {s}
+                {s.name}
               </a>
             ))}
           </div>
