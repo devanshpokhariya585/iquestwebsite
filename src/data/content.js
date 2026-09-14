@@ -129,7 +129,7 @@ export const team = {
     { name: 'Hadeeqa Kouser M', role: 'Design Head', initials: 'HKM', bio: 'Crafts the look and feel of everything we make.' },
     { name: 'Himangi Goyal', role: 'Finance Head', initials: 'HG', bio: 'Keeps the numbers and the budget in check.' },
     { name: 'Siddharth Agarwal', role: 'Events Head', initials: 'SA', bio: 'Shapes bold visuals and experiences.' },
-    { name: 'Shreya Saravanan', role: 'PR Head', initials: 'SS', bio: 'Tells our story and grows the community.' },
+    { name: 'Shreya Saravanan', role: 'Outreach Head', initials: 'SS', bio: 'Tells our story and grows the community.' },
     { name: 'Nitin Pandey', role: 'Management Head', initials: 'NP', bio: 'Makes events and operations happen.' },
   ],
 }
