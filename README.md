@@ -130,11 +130,6 @@ initials is shown. See `public/team/README.txt`.
 
 wahhh/wow !! yahan tak padh liya , very good !! clock it!!!
 
-### Student Portal - front-end demo (no DB)
-Sign up / sign in requires a **VIT email** (`…@vitstudent.ac.in` or `…@vit.ac.in`).
-Tasks, quiz scores, XP and rank are stored **in the browser (localStorage)** so the
-flow works with no backend. This is a demo store -replace the `readJSON/writeJSON`
-helpers and the auth handlers in `src/pages/Portal.jsx` with calls to your Express +
-MongoDB API when ready.
+
 
 
