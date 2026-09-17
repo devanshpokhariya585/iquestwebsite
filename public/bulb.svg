@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <title>Split red and white lightbulb icon</title>
+  <desc>Minimal vector lightbulb with red left side, white right side, red rays, and divided screw base.</desc>
+
+  <g fill="none" stroke-linecap="butt" stroke-linejoin="round">
+    <!-- Red left half of the bulb -->
+    <path
+      d="M 500 155
+         C 355 155 245 270 245 410
+         C 245 500 285 555 350 625
+         C 395 674 415 720 415 790
+         L 415 820
+         L 500 820
+         L 500 790
+         C 500 690 470 635 410 570
+         C 360 515 330 470 330 410
+         C 330 316 405 240 500 240 Z"
+      fill="#ff174d"/>
+
+    <!-- White right half of the bulb -->
+    <path
+      d="M 500 155
+         C 645 155 755 270 755 410
+         C 755 500 715 555 650 625
+         C 605 674 585 720 585 790
+         L 585 820
+         L 500 820
+         L 500 790
+         C 500 690 530 635 590 570
+         C 640 515 670 470 670 410
+         C 670 316 595 240 500 240 Z"
+      fill="#ffffff"/>
+
+    <!-- Clean separation between bulb halves -->
+    <path d="M 500 155 L 500 240" stroke="#000000" stroke-width="12"/>
+    <path d="M 500 820 L 500 845" stroke="#000000" stroke-width="10"/>
+
+    <!-- Left-side light rays -->
+    <path d="M 205 95 L 155 25" stroke="#ff174d" stroke-width="42"/>
+    <path d="M 125 300 L 35 300" stroke="#ff174d" stroke-width="42"/>
+    <path d="M 210 535 L 135 595" stroke="#ff174d" stroke-width="42"/>
+
+    <!-- Red screw/base section -->
+    <path d="M 415 845 L 500 845 L 500 875 L 415 875 Z" fill="#ff174d"/>
+    <path d="M 415 885 L 500 885 L 500 925 L 415 925 Z" fill="#ff174d"/>
+    <path d="M 415 935 L 500 935 L 500 975 L 415 975 Z" fill="#ff174d"/>
+
+    <!-- White screw/base section -->
+    <path d="M 500 845 L 585 845 L 585 875 L 500 875 Z" fill="#ffffff"/>
+    <path d="M 500 885 L 585 885 L 585 975 L 500 975 Z" fill="#ffffff"/>
+
+    <!-- Black separators and red diagonal thread marks -->
+    <path d="M 415 875 L 500 875 M 415 925 L 500 925" stroke="#000000" stroke-width="8"/>
+    <path d="M 415 885 L 500 925 M 415 935 L 500 975" stroke="#000000" stroke-width="8"/>
+    <path d="M 500 845 L 585 845 M 500 885 L 585 885" stroke="#000000" stroke-width="8"/>
+  </g>
+</svg>
