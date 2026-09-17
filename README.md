@@ -123,11 +123,6 @@ Routes:
   spiral, drift with the cursor, and idle-bob)
 - `/portal` - **Student Portal** (recruitment)
 
-### Team images (transparent PNGs)
-Drop bg-less PNGs into `public/team/` and add an `img` path to each member in
-`src/data/content.js` (`team.members`). Without `img`, a bg-less neon badge with
-initials is shown. See `public/team/README.txt`.
-
 wahhh/wow !! yahan tak padh liya , very good !! clock it!!!
 
 
