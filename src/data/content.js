@@ -91,7 +91,7 @@ export const marquee = [
 export const capabilities = {
   eyebrow: '02 · WHAT WE DO',
   heading: 'THE STACK',
-  subheading: 'Five circuits, one mission — turning ideas into shipped reality.',
+  subheading: 'Five circuits, one mission - turning ideas into shipped reality.',
   items: [
     { icon: 'Code2', title: 'Technical', text: 'Build innovative solutions through code, technology, and problem-solving.' },
     { icon: 'Settings', title: 'Management', text: 'Plan, organize, and execute events that bring ideas to life.' },
