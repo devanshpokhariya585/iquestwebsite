@@ -48,7 +48,7 @@ export default function Footer() {
 
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 font-mono text-[10px] uppercase tracking-widest text-muted md:flex-row">
-          <span>© {new Date().getFullYear()} Innovators Quest · All systems nominal</span>
+          <span>© {new Date().getFullYear()} Innovators Quest </span>
           <span className="flex items-center gap-2">
             • Built by the Innovators Quest Tech Team
           </span>
