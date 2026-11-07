@@ -66,7 +66,7 @@ export default function Navbar() {
           </li> */}
           <li>
             <a
-              href={RECRUITMENT_URL}
+              href="https://club-recruitment-website.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="btn-primary !py-2 !px-5 !text-[10px]"
@@ -105,7 +105,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href={RECRUITMENT_URL}
+                href= "https://club-recruitment-website.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="block py-4 font-mono text-sm uppercase tracking-[0.25em] text-neon"
