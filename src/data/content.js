@@ -136,7 +136,7 @@ export const team = {
 
 // Recruitment is a SEPARATE website , set its URL here. The button opens it in a new tab.
 
-export const RECRUITMENT_URL = 'https://your-recruitment-site.com'
+export const RECRUITMENT_URL = "https://club-recruitment-website.vercel.app/"
 
 // Upcoming events (dated, for the calendar page)
 export const upcomingEvents = [
